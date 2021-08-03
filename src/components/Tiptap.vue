@@ -9,8 +9,8 @@
       <button @click="editor.chain().focus().toggleBold().run()" :class="{ 'is-active': editor.isActive('bold') }">
         Bold
       </button>
-      <button @click="editor.chain().focus().toggleItalic().run()" :class="{ 'is-active': editor.isActive('italic') }">
-        | Italic
+       <button @click="editor.chain().focus().toggleItalic().run()" :class="{ 'is-active': editor.isActive('italic') }">
+        italic
       </button>
       <button @click="setLink" :class="{ 'is-active': editor.isActive('link') }">
         | Link
@@ -35,6 +35,7 @@ import Paragraph from '@tiptap/extension-paragraph'
 import Text from '@tiptap/extension-text'
 import Link from '@tiptap/extension-link'
 import Bold from '@tiptap/extension-bold'
+import Italic from '@tiptap/extension-italic'
 
 export default {
   components: {
@@ -58,6 +59,7 @@ export default {
         Text,
         Bold,
         Link,
+        Italic,
       ],
       content: `
         <p>
