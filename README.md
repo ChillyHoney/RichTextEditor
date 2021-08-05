@@ -1,4 +1,7 @@
-# vueapp4
+# RichTextEditorInVue
+
+You can check this out on this site!
+https://richtexteditor-vuejs.netlify.app/
 
 ## Project setup
 ```
